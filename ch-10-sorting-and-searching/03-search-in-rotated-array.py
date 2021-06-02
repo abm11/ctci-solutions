@@ -5,7 +5,7 @@ def rotated_search(array, item, leftix=0, rightix=None):
     rightix = len(array)
   if rightix <= leftix:
     return None
-  middleix = (rightix + leftix) / 2
+  middleix = (rightix + leftix) // 2
   left, middle = array[leftix], array[middleix]
   if item == middle:
     return middleix
